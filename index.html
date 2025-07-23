@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container nav-content">
+      <div class="logo" aria-label="Business Logo" data-i18n="logo">Your Business</div>
+      <div class="nav-links">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <select id="lang-select" aria-label="Select Language" class="lang-select">
+          <option value="en">English</option>
+          <option value="nl">Nederlands</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1 data-i18n="heroTitle">What We Do</h1>
+      <p data-i18n="heroSubtitle">We provide high-quality solutions in multiple industries to help your business grow.</p>
+    </div>
+  </header>
+
+  <!-- Services Overview Section -->
+  <section id="services" class="services container" aria-label="Services Overview">
+    <a href="#ecommerce" class="service-card" role="button" tabindex="0">
+      <div class="icon" aria-hidden="true">🛒</div>
+      <h2 data-i18n="serviceEcommerceTitle">eCommerce</h2>
+      <p data-i18n="serviceEcommerceDesc">Online stores built with Shopify, WooCommerce, and more.</p>
+    </a>
+
+    <a href="#transport" class="service-card" role="button" tabindex="0">
+      <div class="icon" aria-hidden="true">🚚</div>
+      <h2 data-i18n="serviceTransportTitle">Transport</h2>
+      <p data-i18n="serviceTransportDesc">Reliable logistics and delivery solutions for your business.</p>
+    </a>
+
+    <a href="#itsupport" class="service-card" role="button" tabindex="0">
+      <div class="icon" aria-hidden="true">💻</div>
+      <h2 data-i18n="serviceITSupportTitle">IT Support</h2>
+      <p data-i18n="serviceITSupportDesc">PC setups, maintenance, and technical troubleshooting.</p>
+    </a>
+  </section>
+
+  <!-- Expanded Category Sections -->
+  <section id="ecommerce" class="category container" tabindex="-1" aria-labelledby="ecommerce-title">
+    <h2 id="ecommerce-title" class="category-title" data-i18n="categoryEcommerceTitle">🛒 eCommerce</h2>
+    <p data-i18n="categoryEcommerceDesc">We help businesses launch successful online stores using platforms like Shopify and WooCommerce. We handle setup, payment integration, product systems, and mobile optimization — giving you a professional online presence.</p>
+  </section>
+
+  <section id="transport" class="category container" tabindex="-1" aria-labelledby="transport-title">
+    <h2 id="transport-title" class="category-title" data-i18n="categoryTransportTitle">🚚 Transport</h2>
+    <p data-i18n="categoryTransportDesc">From packages to pallets, we provide fast, safe, and affordable transport solutions. We work with local businesses and individuals to streamline their delivery needs with real-time tracking and top-notch service.</p>
+  </section>
+
+  <section id="itsupport" class="category container" tabindex="-1" aria-labelledby="itsupport-title">
+    <h2 id="itsupport-title" class="category-title" data-i18n="categoryITSupportTitle">💻 IT Support</h2>
+    <p data-i18n="categoryITSupportDesc">Need help setting up or maintaining your tech? We offer support for laptops, networks, printers, and more. Whether you're a home user or a small business, we’ve got the skills to keep you running smoothly.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact container" aria-label="Contact Information">
+    <h2 data-i18n="contactTitle">Contact Us</h2>
+    <p>
+      <span data-i18n="contactEmailLabel">Email:</span>
+      <a href="mailto:yourbro@example.com" aria-label="Email yourbro@example.com">hey@example.com</a>
+    </p>
+    <p>
+      <span data-i18n="contactPhoneLabel">Phone:</span>
+      <a href="tel:+32123456789" aria-label="Call +32 123 456 789">+32 123 456 789</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span data-i18n="footerText">Your Business. All rights reserved.</span></p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        logo: "Your Business",
+        navHome: "Home",
+        navServices: "Services",
+        navContact: "Contact",
+        heroTitle: "What We Do",
+        heroSubtitle: "We provide high-quality solutions in multiple industries to help your business grow.",
+        serviceEcommerceTitle: "eCommerce",
+        serviceEcommerceDesc: "Online stores built with Shopify, WooCommerce, and more.",
+        serviceTransportTitle: "Transport",
+        serviceTransportDesc: "Reliable logistics and delivery solutions for your business.",
+        serviceITSupportTitle: "IT Support",
+        serviceITSupportDesc: "PC setups, maintenance, and technical troubleshooting.",
+        categoryEcommerceTitle: "🛒 eCommerce",
+        categoryEcommerceDesc: "We help businesses launch successful online stores using platforms like Shopify and WooCommerce. We handle setup, payment integration, product systems, and mobile optimization — giving you a professional online presence.",
+        categoryTransportTitle: "🚚 Transport",
+        categoryTransportDesc: "From packages to pallets, we provide fast, safe, and affordable transport solutions. We work with local businesses and individuals to streamline their delivery needs with real-time tracking and top-notch service.",
+        categoryITSupportTitle: "💻 IT Support",
+        categoryITSupportDesc: "Need help setting up or maintaining your tech? We offer support for laptops, networks, printers, and more. Whether you're a home user or a small business, we’ve got the skills to keep you running smoothly.",
+        contactTitle: "Contact Us",
+        contactEmailLabel: "Email:",
+        contactPhoneLabel: "Phone:",
+        footerText: "Your Brother's Business. All rights reserved."
+      },
+      nl: {
+        logo: "Jouw Bedrijf",
+        navHome: "Home",
+        navServices: "Diensten",
+        navContact: "Contact",
+        heroTitle: "Wat We Doen",
+        heroSubtitle: "We bieden hoogwaardige oplossingen in verschillende sectoren om uw bedrijf te laten groeien.",
+        serviceEcommerceTitle: "eCommerce",
+        serviceEcommerceDesc: "Webshops gebouwd met Shopify, WooCommerce en meer.",
+        serviceTransportTitle: "Transport",
+        serviceTransportDesc: "Betrouwbare logistiek en bezorgoplossingen voor uw bedrijf.",
+        serviceITSupportTitle: "IT Ondersteuning",
+        serviceITSupportDesc: "PC-installaties, onderhoud en technische ondersteuning.",
+        categoryEcommerceTitle: "🛒 eCommerce",
+        categoryEcommerceDesc: "We helpen bedrijven succesvolle webshops te lanceren met platforms zoals Shopify en WooCommerce. We verzorgen installatie, betaalintegratie, productbeheer en mobiele optimalisatie — voor een professionele online aanwezigheid.",
+        categoryTransportTitle: "🚚 Transport",
+        categoryTransportDesc: "Van pakketten tot pallets, wij bieden snelle, veilige en betaalbare transportoplossingen. We werken samen met lokale bedrijven en particulieren om hun bezorgbehoeften te stroomlijnen met realtime tracking en topservice.",
+        categoryITSupportTitle: "💻 IT Ondersteuning",
+        categoryITSupportDesc: "Hulp nodig bij het instellen of onderhouden van je techniek? We bieden ondersteuning voor laptops, netwerken, printers en meer. Of je nu thuis bent of een klein bedrijf runt, wij zorgen dat alles soepel blijft draaien.",
+        contactTitle: "Contacteer Ons",
+        contactEmailLabel: "E-mail:",
+        contactPhoneLabel: "Telefoon:",
+        footerText: "Het Bedrijf van Je Broer. Alle rechten voorbehouden."
+      },
+      fr: {
+        logo: "Votre Entreprise",
+        navHome: "Accueil",
+        navServices: "Services",
+        navContact: "Contact",
+        heroTitle: "Ce Que Nous Faisons",
+        heroSubtitle: "Nous fournissons des solutions de haute qualité dans plusieurs secteurs pour aider votre entreprise à se développer.",
+        serviceEcommerceTitle: "eCommerce",
+        serviceEcommerceDesc: "Boutiques en ligne créées avec Shopify, WooCommerce, et plus.",
+        serviceTransportTitle: "Transport",
+        serviceTransportDesc: "Solutions logistiques fiables et services de livraison pour votre entreprise.",
+        serviceITSupportTitle: "Support IT",
+        serviceITSupportDesc: "Configuration PC, maintenance et dépannage technique.",
+        categoryEcommerceTitle: "🛒 eCommerce",
+        categoryEcommerceDesc: "Nous aidons les entreprises à lancer des boutiques en ligne réussies avec des plateformes comme Shopify et WooCommerce. Nous gérons la configuration, l'intégration des paiements, la gestion des produits et l'optimisation mobile — pour une présence en ligne professionnelle.",
+        categoryTransportTitle: "🚚 Transport",
+        categoryTransportDesc: "Des colis aux palettes, nous fournissons des solutions de transport rapides, sûres et abordables. Nous travaillons avec des entreprises locales et des particuliers pour rationaliser leurs besoins de livraison avec un suivi en temps réel et un service de qualité.",
+        categoryITSupportTitle: "💻 Support IT",
+        categoryITSupportDesc: "Besoin d’aide pour configurer ou entretenir votre tech ? Nous offrons un support pour ordinateurs portables, réseaux, imprimantes, et plus. Que vous soyez un utilisateur domestique ou une petite entreprise, nous avons les compétences pour vous maintenir opérationnel.",
+        contactTitle: "Contactez-nous",
+        contactEmailLabel: "E-mail :",
+        contactPhoneLabel: "Téléphone :",
+        footerText: "L’entreprise de Votre Frère. Tous droits réservés."
+      }
+    };
+
+    function translatePage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    document.getElementById('lang-select').addEventListener('change', (e) => {
+      translatePage(e.target.value);
+    });
+
+    // Initialize default language
+    translatePage('en');
+  </script>
+</body>
+</html>
